@@ -1,0 +1,52 @@
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.film {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.film img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.film h2 {
+  margin: 10px 0;
+}
+
+button#btnSettings {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #0078d7;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#btnSettings:hover {
+  background-color: #005fa3;
+}
