@@ -1,0 +1,9 @@
+{
+  "ime": "The Matrix",
+  "opis": "Ikonična akcijska znanstvena fikcija.",
+  "slikaPot": "img/theMatrix.jpg",
+  "igralci": ["Keanu Reeves", "Laurence Fishburne"],
+  "zanri": ["Sci-Fi", "Akcija"],
+  "priljubljen": true,
+  "ocena": 5
+}

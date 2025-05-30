@@ -1,52 +1,116 @@
+:root {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --card: #1e1e1e;
+  --header: #1a1a1a;
+}
+
 body {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 40px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--header);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.left-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.left-icons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  filter: brightness(1.2);
+}
+
+.left-icons img:hover {
+  transform: scale(1.1);
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+main {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 .film {
-  background-color: #1e1e1e;
-  width: 90%;
-  max-width: 600px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  background-color: var(--card);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   text-align: center;
 }
 
 .film img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .film h2 {
-  margin: 10px 0;
+  margin: 8px 0;
+  font-size: 18px;
+  color: #e0e0e0;
 }
 
-button#btnSettings {
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #3a86ff;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
+.film p {
+  margin: 4px 0;
+  color: #cccccc;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--header);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.left-icon,
+.right-icon {
+  width: 40px;
+}
+
+.left-icon img,
+.right-icon img {
+  width: 36px;
+  height: 36px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
-button#btnSettings:hover {
-  background-color: #265ecf;
+.left-icon img:hover,
+.right-icon img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  flex-grow: 1;
+  text-align: center;
 }

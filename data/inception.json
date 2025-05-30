@@ -1,0 +1,9 @@
+{
+  "ime": "Inception",
+  "opis": "Znanstvenofantastični triler o kraji idej iz podzavesti.",
+  "slikaPot": "img/inception.jpg",
+  "igralci": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+  "zanri": ["Sci-Fi", "Triler"],
+  "priljubljen": true,
+  "ocena": 5
+}

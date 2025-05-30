@@ -1,0 +1,9 @@
+{
+  "ime": "The Godfather",
+  "opis": "Gangsterska drama o mafijski družini Corleone.",
+  "slikaPot": "img/theGodfather.jpg",
+  "igralci": ["Marlon Brando", "Al Pacino"],
+  "zanri": ["Kriminalka", "Drama"],
+  "priljubljen": false,
+  "ocena": 4
+}

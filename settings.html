@@ -4,11 +4,51 @@
   <meta charset="UTF-8">
   <title>Nastavitve</title>
   <link id="theme" rel="stylesheet" href="css/light.css">
+  <style>
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      padding: 0;
+    }
+
+    .theme-toggle img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.2s ease;
+    }
+
+    .theme-toggle:hover img {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <h2>Izberi barvno shemo</h2>
-  <button onclick="setTheme('light')">Svetla tema</button>
-  <button onclick="setTheme('dark')">Temna tema</button>
+  <button id="themeToggle" class="theme-toggle">
+    <img id="themeIcon" src="icons/light-mode-toggle-icon.svg" alt="Spremeni temo" />
+  </button>
   <script src="settings.js"></script>
 </body>
 </html>

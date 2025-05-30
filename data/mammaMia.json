@@ -1,0 +1,9 @@
+{
+  "ime": "Mamma Mia!",
+  "opis": "Glasbena romantična komedija s hiti skupine ABBA.",
+  "slikaPot": "img/mammaMia.jpg",
+  "igralci": ["Meryl Streep", "Pierce Brosnan", "Amanda Seyfried"],
+  "zanri": ["Glasbeni", "Romantična komedija"],
+  "priljubljen": false,
+  "ocena": 3
+}
